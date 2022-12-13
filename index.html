@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website that opens a new tab when closed</title>
+  </head>
+  <body>
+    <h1>Website that opens a new tab when closed</h1>
+    <p>This website will open a new tab when it is closed.</p>
+
+    <script>
+      // Open a new tab when the page is closed
+      window.addEventListener('beforeunload', function(event) {
+        event.preventDefault();
+        window.open('https://www.google.com/', '_blank');
+      });
+    </script>
+  </body>
+</html>
